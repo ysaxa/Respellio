@@ -1,0 +1,27 @@
+{
+	"size": 80,
+	"positionX": 3000,
+	"positionY": 700,
+	"updateDelay": 50,
+	"refreshDelay": 100,
+
+	"boundingBoxTop": 1058,
+	"boundingBoxLeft": 2866,
+	"boundingBoxWidth": 556,
+	"boundingBoxHeight": 204,
+
+	"rowTestsX": 540,
+	"rowTestsY": [94, 121, 147, 174],
+	"spellTestsX": [66, 197, 327, 458],
+	"spellTestsY": 77,
+	"gridIcon": [491, 15],
+
+	"spellGrid": [
+		["diffindo", "confringo", "expelliarmus", "bombarda"],
+		["levioso", "arresto", "glacius", "transformation"],
+		["accio", "flipendo", "descendo", "depulso"],
+		["desillusionment", "avadakedavra", "imperio", "crucio"]
+	],
+
+	"":""
+}
