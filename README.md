@@ -8,6 +8,7 @@ Also sometimes I'm in a spellset and I don't remember if I have to scroll up or 
 
 ## What
 This project adds an overlay that displays the spell table during fights, which allows to see all spellsets and be able to easily switch to any spellset, and also see all cooldowns.
+![Example](https://user-images.githubusercontent.com/102462519/223238435-3d16d6c0-230f-40c1-8664-481556f20207.png)
 
 ## Limitations
 - This overlay reads information on the screen, not really efficient.
@@ -16,7 +17,8 @@ This project adds an overlay that displays the spell table during fights, which 
 - It is only thought for KB/M users (for now?) with the table/rows layouts, not diamond layouts.
 
 ## How to use
-- Edit `config.json` so that values correspond to your screen (see below).
+- Edit `config.json` so that values correspond to your screen (see below)
+- Maybe edit other values to change the size/position/whatever of the overlay
 - Have your "displayicons" folder ready next to the .exe
 - Run the .exe (maybe nothing will happen except a tray icon will appear)
 - Enjoy the game with the overlay
