@@ -76,11 +76,11 @@ class Overlay(QtWidgets.QWidget):
 
 				image: Image = self.noImage
 				if self.isActive: # not sure why pylance is lost since this 'if' was added
-					image: Image = PilImage.new('RGBA', (config['size'], config['size']), (0, 0, 0, 255))
+					image: Image = PilImage.new('RGBA', (config['size'], config['size']), (0, 0, 0, 0) if spellindic.spell == spells.none else (0, 0, 0, 255))
 					filling: Image = PilImage.new('RGBA', (config['size'], height), tuple(map(lambda x: int(x*0.7), spellindic.spell.color)) if spellindic.lastUsed != 0 else spellindic.spell.color)
 					image.paste(filling, (0, config['size']-height), filling) # third argument for transparency
 					image.paste(spellindic.spell.icon, (0, 0), spellindic.spell.icon)
-					if y==self.activerow: image.paste(self.rectangle, (0, 0), self.rectangle)
+					if y==self.activerow and spellindic.spell != spells.none: image.paste(self.rectangle, (0, 0), self.rectangle)
 
 				pixmap: QPixmap = QPixmap.fromImage(ImageQt(image)) # type: ignore
 				label.setPixmap(pixmap)

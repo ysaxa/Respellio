@@ -36,6 +36,7 @@ class spells(Spell, Enum):
 	reparo = PilImage.open('displayicons/reparo.png').resize((config['size'],config['size'])), BLUE, 1
 	transformation = PilImage.open('displayicons/transformation.png').resize((config['size'],config['size'])), YELLOW, 20
 	wingardiumleviosa = PilImage.open('displayicons/wingardiumleviosa.png').resize((config['size'],config['size'])), BLUE, 1
+	none = PilImage.new('RGBA', (64, 64), (0,0,0,0)).resize((config['size'],config['size'])), (0,0,0,0), 1
 
 spellgrid: "list[list[Spell]]" = [
 	[spells[config['spellGrid'][y][x]] for x in range(4)]
