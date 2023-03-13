@@ -32,7 +32,29 @@ relevant attributes:
   - size
   - positionX
   - positionY
-* Edit `config.json`to specify your spells
+* Edit `config.json`to specify your spells<br>
+supported spells:
+  - none (transparent box)
+  - accio
+  - arresto
+  - avadakedavra
+  - bombarda
+  - confringo
+  - crucio
+  - depulso
+  - descendo
+  - desillusionment
+  - diffindo
+  - expelliarmus
+  - flipendo
+  - glacius
+  - imperio
+  - incendio
+  - levioso
+  - lumos
+  - reparo
+  - transformation
+  - wingardiumleviosa
 * Have your "displayicons" folder ready next to the .exe
 * Run the .exe (maybe nothing will happen except a tray icon will appear)
 * Enjoy the game with the overlay
